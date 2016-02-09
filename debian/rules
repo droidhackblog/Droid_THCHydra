@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE=1
+
+INSTALL := install -o root -g root -m 755
+
+%:
+	dh $@ 
+
+override_dh_auto_install:
+	$(INSTALL) hydra $(CURDIR)/debian/hydra/usr/bin
+	$(INSTALL) pw-inspector $(CURDIR)/debian/hydra/usr/bin
+	$(INSTALL) xhydra $(CURDIR)/debian/hydra-gtk/usr/bin

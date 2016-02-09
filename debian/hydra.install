@@ -1,0 +1,4 @@
+#!/usr/bin/dh-exec
+hydra-wizard.sh => /usr/bin/hydra-wizard
+dpl4hydra.sh => /usr/bin/dpl4hydra
+dpl4hydra_local.csv => /usr/share/hydra/dpl4hydra_local.csv

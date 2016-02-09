@@ -1,0 +1,62 @@
+Source: hydra
+Section: net
+Priority: extra
+Maintainer: Julián Moreno Patiño <julian@debian.org>
+Uploaders: Daniel Echeverry <epsilon77@gmail.com>
+Build-Depends: autotools-dev,
+ debhelper (>= 9),
+ firebird-dev[!hurd-any],
+ libgtk2.0-dev,
+ libidn11-dev,
+ libmysqlclient-dev,
+ libncurses-dev,
+ libpcre3-dev,
+ libpq-dev,
+ libssh-dev,
+ libsvn-dev,
+ pkg-config, 
+ dh-exec
+Standards-Version: 3.9.6
+Homepage: http://freeworld.thc.org/thc-hydra/
+Vcs-Git: git://anonscm.debian.org/collab-maint/hydra.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/hydra.git;a=summary
+
+Package: hydra
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Suggests: hydra-gtk
+Recommends: wget | curl
+Description: very fast network logon cracker
+ Hydra is a parallelized login cracker which supports numerous protocols
+ to attack. It is very fast and flexible, and new modules are easy to add.
+ .
+ This tool makes it possible for researchers and security consultants to
+ show how easy it would be to gain unauthorized access to a system
+ remotely.
+ .
+ It supports: Cisco AAA, Cisco auth, Cisco enable, CVS, FTP, HTTP(S)-FORM-GET,
+ HTTP(S)-FORM-POST, HTTP(S)-GET, HTTP(S)-HEAD, HTTP-Proxy, ICQ, IMAP, IRC,
+ LDAP, MS-SQL, MySQL, NNTP, Oracle Listener, Oracle SID, PC-Anywhere, PC-NFS,
+ POP3, PostgreSQL, RDP, Rexec, Rlogin, Rsh, SIP, SMB(NT), SMTP, SMTP Enum,
+ SNMP v1+v2+v3, SOCKS5, SSH (v1 and v2), SSHKEY, Subversion, Teamspeak (TS2),
+ Telnet, VMware-Auth, VNC and XMPP.
+
+Package: hydra-gtk
+Architecture: any
+Depends: hydra (>= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Description: very fast network logon cracker - GTK+ based GUI
+ Hydra is a parallelized login cracker which supports numerous protocols
+ to attack. It is very fast and flexible, and new modules are easy to add.
+ .
+ This tool makes it possible for researchers and security consultants to
+ show how easy it would be to gain unauthorized access to a system
+ remotely.
+ .
+ It supports: Cisco AAA, Cisco auth, Cisco enable, CVS, FTP, HTTP(S)-FORM-GET,
+ HTTP(S)-FORM-POST, HTTP(S)-GET, HTTP(S)-HEAD, HTTP-Proxy, ICQ, IMAP, IRC,
+ LDAP, MS-SQL, MySQL, NNTP, Oracle Listener, Oracle SID, PC-Anywhere, PC-NFS,
+ POP3, PostgreSQL, RDP, Rexec, Rlogin, Rsh, SIP, SMB(NT), SMTP, SMTP Enum,
+ SNMP v1+v2+v3, SOCKS5, SSH (v1 and v2), SSHKEY, Subversion, Teamspeak (TS2),
+ Telnet, VMware-Auth, VNC and XMPP.
+ .
+ This package provides the GTK+ based GUI for hydra.
