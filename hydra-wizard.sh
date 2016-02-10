@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/system/bin/sh
 #
 # based on a script by Shivang Desai <shivang.ice.2010@gmail.com>
 #

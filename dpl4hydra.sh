@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/system/bin/sh
 #
 # Name:     dpl4hydra
 # Version:  0.9.9

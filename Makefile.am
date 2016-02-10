@@ -5,7 +5,8 @@ OPTS=-I. -Wall
 # -Wall -g -pedantic
 LIBS=-lm
 DIR=/bin
-
+WL=/data/data/hack.wireshark.android
+LDFLAGS = -Wl,-rpath=$(WL)/libc/lib:$(WL)/ettercap/lib/:$(WL)/thc-hydra-8.1/lib -Wl,--dynamic-linker=$(WL)/libc/lib/ld-linux-armhf.so.3
 SRC = hydra-vnc.c hydra-pcnfs.c hydra-rexec.c hydra-nntp.c hydra-socks5.c \
       hydra-telnet.c hydra-cisco.c hydra-http.c hydra-ftp.c hydra-imap.c \
       hydra-pop3.c hydra-smb.c hydra-icq.c hydra-cisco-enable.c hydra-ldap.c \
