@@ -1,9 +1,0 @@
-09_use_correct_install_dir_dlp4hydra.diff
-05_add_option_to_cflag.diff
-01_fix_include_libpq-dev.diff
-02_using_supported_protocols.diff
-03_use_bin_path.diff
-04_fix_hyphen-used-as-minus-sign.diff
-06_show_xhydra_build_output.diff
-07_remove_troubled_files.diff
-08_fix_spelling_mistakes.diff

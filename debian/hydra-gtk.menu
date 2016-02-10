@@ -1,8 +1,0 @@
-?package(hydra-gtk):\
-needs="X11"\
-section="Applications/Network/Monitoring"\
-title="XHydra"\
-icon="/usr/share/pixmaps/xhydra.xpm"\
-longtitle="Run XHydra" \
-description="Run the Hydra GUI, XHydra" \
-command="/usr/bin/xhydra" 
