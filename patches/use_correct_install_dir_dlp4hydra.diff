@@ -1,0 +1,42 @@
+--- a/dpl4hydra.sh
++++ b/dpl4hydra.sh
+@@ -8,8 +8,8 @@
+ # Credits:  Thanks to van Hauser for support and fixing portability issues.
+ #           "The universe is an intelligence test." -Timothy Leary (R.I.P.)
+ 
+-INSTALLDIR=/usr/local
+-LOCATION=etc
++INSTALLDIR=$HOME
++LOCATION=.dpl4hydra
+ 
+ usage ()
+ {
+@@ -130,11 +130,11 @@ generate ()
+     fi
+   fi
+ 
+-  cat $FULLFILE 2>/dev/null | grep -i "$PATTERN" | awk -F"," '{ print $5":"$6 }' | sed 's/^[ \t]*//' | sed 's/[ \t]*$//' | sort | uniq > $HYDRAFILE
++  cat $FULLFILE 2>/dev/null | grep -i "$PATTERN" | awk -F"," '{ print $5":"$6 }' | sed 's/^[ \t]*//' | sed 's/[ \t]*$//' | sort | uniq > $DPLPATH/$HYDRAFILE
+ 
+-  ENTRIES=`wc -l $HYDRAFILE | awk '{ print $1 }'`
++  ENTRIES=`wc -l $DPLPATH/$HYDRAFILE | awk '{ print $1 }'`
+   if [ "$ENTRIES" -eq 0 ]; then
+-    rm -f $HYDRAFILE
++    rm -f $DPLPATH/$HYDRAFILE
+     echo
+     echo "ERROR: No matching entries found for $BRAND systems." >&2
+     echo "       File $HYDRAFILE was not created." >&2
+@@ -156,10 +156,12 @@ generate ()
+ LC_ALL=C
+ export LC_ALL
+ DPLPATH="."
++CSVPATH="/usr/share/hydra"
+ test -r "$DPLPATH/dpl4hydra_full.csv" || DPLPATH="$INSTALLDIR/$LOCATION"
++test -d "$INSTALLDIR/$LOCATION" || mkdir -p "$INSTALLDIR/$LOCATION"
+ FULLFILE="$DPLPATH/dpl4hydra_full.csv"
+ OLDFILE="$DPLPATH/dpl4hydra_full.old"
+-LOCALFILE="$DPLPATH/dpl4hydra_local.csv"
++LOCALFILE="$CSVPATH/dpl4hydra_local.csv"
+ INDEXSITE="$DPLPATH/dpl4hydra_index.tmp"
+ SUBSITES="$DPLPATH/dpl4hydra_subs.tmp"
+ CLEANFILE="$DPLPATH/dpl4hydra_clean.tmp"

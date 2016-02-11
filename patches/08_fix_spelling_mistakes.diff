@@ -1,0 +1,20 @@
+--- a/hydra.c
++++ b/hydra.c
+@@ -2320,7 +2320,7 @@
+ #endif
+ 
+   if (debug)
+-    printf("[DEBUG] Ouput color flag is %d\n", colored_output);
++    printf("[DEBUG] Output color flag is %d\n", colored_output);
+ 
+   printf("%s (%s) starting at %s\n", PROGRAM, RESOURCE, hydra_build_time());
+   if (debug) {
+@@ -3786,7 +3786,7 @@
+       fprintf(stderr, "[ERROR] illegal target result value (%d=>%d)\n", i, hydra_targets[i]->done);
+     }
+ 
+-  if (debug) printf("[DEBUG] killing all remaining childs now that might be stuck\n");
++  if (debug) printf("[DEBUG] killing all remaining children now that might be stuck\n");
+   for (i = 0; i < hydra_options.max_use; i++)
+     if (hydra_heads[i]->active > 0 && hydra_heads[i]->pid > 0)
+       hydra_kill_head(i, 1, 3);
