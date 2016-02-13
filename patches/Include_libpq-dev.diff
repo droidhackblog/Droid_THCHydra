@@ -1,0 +1,11 @@
+--- a/hydra-postgres.c
++++ b/hydra-postgres.c
+@@ -14,7 +14,7 @@ void dummy_postgres() {
+ }
+ #else
+ 
+-#include "libpq-fe.h"           // Postgres connection functions
++#include <postgresql/libpq-fe.h>           // Postgres connection functions
+ #include <stdio.h>
+ 
+ #define DEFAULT_DB "template1"
