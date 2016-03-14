@@ -4,13 +4,8 @@ Thc-Hydra Porting to Android
 > Zhu-Zhi-Hao  
 > 2016-2-9  
 
-
-# [Changes](./CHANGES)
-
-> **希望陌讯科技&&普乐软件&&联合兴邦能接手项目！！完成Thc-Hydra移植项目**
-
-- **Sorry of my poor English,I did nothing**
-
+### [更新记录](./CHANGES.md)
+**
 ### INTRODUCTION
 
 Number one of the biggest security holes are passwords, as every password
