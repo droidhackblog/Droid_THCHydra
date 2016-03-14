@@ -4,11 +4,8 @@ Thc-Hydra Porting to Android
 > Zhu-Zhi-Hao  
 > 2016-2-9  
 
-- `BUGFIX spelling_mistakes`
-- `BUGFIX use_correct_install_dir_dlp4hydra`
-- `BUGFIX Include-libpq`
 
-# [Droid\_THCHydra最后一次commit代码，Thc-Hydra,Droid\_Packager,WiresharkQTUI项目未完成，也许，高考完后吧....再见GITHUB](https://github.com/Zhu-Zhi-Hao/TODO)
+# [Changes](./CHANGES)
 
 > **希望陌讯科技&&普乐软件&&联合兴邦能接手项目！！完成Thc-Hydra移植项目**
 
