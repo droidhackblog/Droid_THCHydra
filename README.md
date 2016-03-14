@@ -3,10 +3,13 @@ Thc-Hydra Porting to Android
 
 > Zhu-Zhi-Hao  
 > 2016-2-9  
+
 ###PreBuild
 - Please Install Busybox !
 - ADB SHELL: `tar -xf PreBuild/Thc-Hydra.tar.xz -C /data/data/`
-### [更新记录](./CHANGES.md)
+
+### [Changes](./CHANGES.md)
+
 ### INTRODUCTION
 Number one of the biggest security holes are passwords, as every password
 security study shows.
