@@ -4,6 +4,8 @@ Thc-Hydra Porting to Android
 > Zhu-Zhi-Hao  
 > 2016-2-9  
 
+![ScreenShot](./Screenshot_20160314-232458~2.png)
+
 ###PreBuild
 - Please Install Busybox !
 - ADB SHELL: `tar -xf PreBuild/Thc-Hydra.tar.xz -C /data/data/`
