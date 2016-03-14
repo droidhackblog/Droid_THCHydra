@@ -3,11 +3,11 @@ Thc-Hydra Porting to Android
 
 > Zhu-Zhi-Hao  
 > 2016-2-9  
-
+###PreBuild
+- Please Install Busybox !
+- ADB SHELL: `tar -xf PreBuild/Thc-Hydra.tar.xz -C /data/data/`
 ### [更新记录](./CHANGES.md)
-**
 ### INTRODUCTION
-
 Number one of the biggest security holes are passwords, as every password
 security study shows.
 This tool is a proof of concept code, to give researchers and security
@@ -35,6 +35,6 @@ Currently this tool supports the following protocols:
 However the module engine for new services is very easy so it won't take a
 long time until even more services are supported.
 
-### Your help in writing, enhancing or fixing modules is highly appreciated!! :-)
+Your help in writing, enhancing or fixing modules is highly appreciated!! :-)
 
 
