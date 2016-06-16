@@ -14,8 +14,6 @@
 char *prg;
 
 void help() {
-  printf("DroidExploitToolkit-ThcHydra\n");
-  printf("Modified and Porting:ZhuZhiHao\n");
   printf("%s %s (c) 2005 by van Hauser / THC %s [%s]\n\n", PROGRAM, VERSION, EMAIL, WEB);
   printf("Syntax: %s [-i FILE] [-o FILE] [-m MINLEN] [-M MAXLEN] [-c MINSETS] -l -u -n -p -s\n\n", prg);
   printf("Options:\n");
