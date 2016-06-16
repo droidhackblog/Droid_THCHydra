@@ -2,9 +2,7 @@ Thc-Hydra Porting to Android
 -----------------------------
 
 > Zhu-Zhi-Hao  
-> 2016-2-9  
-
-![ScreenShot](./Screenshot_20160314-232458~2.png)
+> 2016-6-16  
 
 ###PreBuild
 - Please Install Busybox !
